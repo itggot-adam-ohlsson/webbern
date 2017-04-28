@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1;
+  transition: 0.2s ease;
+  display: flex;
+  justify-content: center;
+}
+
+header.header {
+  height: 52px;
+}
+
+header .header_content {
+  display: flex;
+  align-items: center;
+  width: 60vw;
+  max-width: 1300px;
+  height: 80px;
+  padding: 0 16px 0 16px;
+  transition: 0.2s ease;
+}
+
+header .header_content.header {
+  height: 52px;
+}
+
+.logo_and_brandname {
+  display: flex;
+  align-items: center;
+}
+
+.logo_and_brandname h1 {
+  color: #212121;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 30px;
+  margin-left: 32px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -5px -5px;
+  transition: 0.2s ease;
+}
+
+.logo_mini {
+  width: 40px;
+  height: 40px;
+  background-position: -65px -5px;
+}
+
+.content_frame {
+  width: 100vw;
+  height: 200vh;
+}
+
+.top {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_content {
+  width: 60vw;
+  max-width: 1300px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top_title {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  margin: 16px 8px 16px;
+}
+
+.top_content p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin: 8px;
+}
+
+.top_buttons {
+  display: flex;
+}
+
+.top_button {
+  padding: 4px 16px 4px 16px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid white;
+  border-radius: 2px;
+  margin: 8px;
+}
+
+.top_button h1 {
+  font-size: 14px;
+}
+
+#learn_more {
+  background-color: #ee35ee;
+  border: 2px solid #ee35ee;
+}
+
+.main_content {
+
+}
