@@ -6,8 +6,16 @@
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
+
+    <div class="slide_show_buttons" id="slide_left">
+      <i class="material-icons">keyboard_arrow_left</i>
+    </div>
+    <div class="slide_show_buttons" id="slide_right">
+      <i class="material-icons">keyboard_arrow_right</i>
+    </div>
 
     <header>
       <div class="header_content">
@@ -15,11 +23,38 @@
           <div class="logo"></div>
           <h1>Webbern</h1>
         </div>
+        <nav>
+          <a href="#">
+            <div class="nav_links">
+              <h1>Hem</h1>
+            </div>
+          </a>
+          <a href="#">
+            <div class="nav_links">
+              <h1>Beställ</h1>
+            </div>
+          </a>
+          <a href="#">
+            <div class="nav_links">
+              <h1>Webbern</h1>
+            </div>
+          </a>
+          <a href="#">
+            <div class="nav_links">
+              <h1>Portfolio</h1>
+            </div>
+          </a>
+          <a href="#">
+            <div class="nav_links">
+              <h1>Kontakt</h1>
+            </div>
+          </a>
+        </nav>
       </div>
     </header>
 
     <div class="content_frame">
-      <div class="top" data-parallax="scroll" data-image-src="./img/webbern.png">
+      <div class="top" data-parallax="scroll" data-image-src="">
         <div class="top_content">
           <h1 class="top_title fadeInLeft animated">Webbern</h1>
           <p class="fadeInLeft animated">Beställ idag och få den färdiga produkten inom  30 arbetsdagar.</p>
@@ -40,9 +75,9 @@
       </div>
     </div>
 
+    <script src="./js/jquery-3.2.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
-    <script src="./js/jquery-3.2.1.js"></script>
     <script src="./js/functions.js"></script>
   </body>
 </html>
