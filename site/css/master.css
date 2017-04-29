@@ -92,14 +92,14 @@ a, a:link, a:visited {
   width: 50px;
   height: 50px;
   background-image: url("../img/spritesheet.png");
-  background-position: -5px -5px;
+  background-position: -425px -5px;
   transition: 0.2s ease;
 }
 
 .logo_mini {
   width: 40px;
   height: 40px;
-  background-position: -65px -5px;
+  background-position: -485px -5px;
 }
 
 .content_frame {
@@ -125,14 +125,15 @@ a, a:link, a:visited {
 
 .top_title {
   color: white;
-  font-family: serif;
+  font-family: 'Cardo', serif;
   font-size: 50px;
+  font-weight: normal;
   margin: 16px 8px 16px;
 }
 
 .top_content p {
   color: white;
-  font-family: serif;
+  font-family: 'Cardo', serif;
   font-size: 20px;
   margin: 8px;
 }
@@ -159,6 +160,80 @@ a, a:link, a:visited {
   border: 2px solid #ee35ee;
 }
 
-.main_content {
+.main_container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.main_content {
+  width: 60vw;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content_block {
+  width: 60vw;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content_block h1 {
+  font-size: 18px;
+  margin: 16px 0 16px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.features {
+  height: 450px;
+}
+
+.features_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.features_block {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features_block p {
+  max-width: 200px;
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Cardo', serif;
+}
+
+.features_block_img {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/spritesheet.png");
+}
+
+#design {
+  background-position: -5px -5px;
+}
+
+#responsive {
+  background-position: -5px -215px;
+}
+
+#easy {
+  background-position: -215px -5px;
+}
+
+.good_so_far {
+  width: 100vw;
+  height: 300px;
 }

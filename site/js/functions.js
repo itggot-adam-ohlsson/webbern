@@ -37,3 +37,6 @@ $("#slide_right").click(function() {
     $(".top").attr("data-image-src", images[i]);
   }
 });
+
+window.sr = ScrollReveal();
+sr.reveal('.features_block_img', { duration: 500 });
