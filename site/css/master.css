@@ -3,26 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-.slide_show_buttons {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-#slide_left {
-  left: 0;
-}
-
-#slide_right {
-  right: 0;
-}
-
 header {
   width: 100vw;
   height: 80px;
@@ -62,12 +42,12 @@ header .header_content.header {
 .logo_and_brandname h1 {
   color: #212121;
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 800;
   margin-left: 32px;
 }
 
 nav  {
-  padding: 0 16px 0 16px;
   display: flex;
 }
 
@@ -79,7 +59,7 @@ nav .nav_links {
 nav .nav_links h1 {
   color: #212121;
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: normal;
   padding: 8px;
 }
@@ -104,7 +84,6 @@ a, a:link, a:visited {
 
 .content_frame {
   width: 100vw;
-  height: 200vh;
 }
 
 .top {
@@ -185,12 +164,8 @@ a, a:link, a:visited {
 
 .content_block h1 {
   font-size: 18px;
-  margin: 16px 0 16px 0;
+  margin: 32px 0 32px 0;
   font-family: 'Open Sans', sans-serif;
-}
-
-.features {
-  height: 450px;
 }
 
 .features_content {
@@ -200,14 +175,14 @@ a, a:link, a:visited {
   align-items: flex-start;
 }
 
-.features_block {
+.features_blocks {
   padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.features_block p {
+.features_blocks p {
   max-width: 200px;
   margin: 0;
   text-align: center;
@@ -215,10 +190,18 @@ a, a:link, a:visited {
   font-family: 'Cardo', serif;
 }
 
-.features_block_img {
-  width: 200px;
-  height: 200px;
-  background-image: url("../img/spritesheet.png");
+.features_block {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #212121;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features_block i {
+  font-size: 30px;
 }
 
 #design {
@@ -233,7 +216,10 @@ a, a:link, a:visited {
   background-position: -215px -5px;
 }
 
-.good_so_far {
+/* FOOTER */
+
+footer {
   width: 100vw;
-  height: 300px;
+  height: 400px;
+  background-color: #71005d;
 }

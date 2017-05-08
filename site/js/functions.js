@@ -20,23 +20,5 @@ $(window).scroll(function() {
   $(".top_content").css("opacity", 1 - $(window).scrollTop() / 400);
 });
 
-var images = ["./img/webbern.png", "./img/animated.jpg", "./img/hej.jpg"];
-var i = 0;
-$(".top").attr("data-image-src", images[i]);
-
-$("#slide_left").click(function() {
-  if (i > 0) {
-    i = i - 1
-    $(".top").attr("data-image-src", images[i]);
-  }
-});
-
-$("#slide_right").click(function() {
-  if (i < images.length-1) {
-    i = i + 1
-    $(".top").attr("data-image-src", images[i]);
-  }
-});
-
 window.sr = ScrollReveal();
 sr.reveal('.features_block_img', { duration: 500 });
