@@ -160,6 +160,7 @@ a, a:link, a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 16px 0 16px 0;
 }
 
 .content_block h1 {
@@ -187,13 +188,25 @@ a, a:link, a:visited {
   margin: 0;
   text-align: center;
   font-size: 15px;
-  font-family: 'Cardo', serif;
+  font-family: sans-serif;
 }
 
 .features_block {
   width: 100px;
   height: 100px;
-  border: 2px solid #212121;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.mid_circle {
+  width: 84px;
+  height: 84px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -202,18 +215,21 @@ a, a:link, a:visited {
 
 .features_block i {
   font-size: 30px;
+  color: #212121;
+  transition: 0.2s ease;
 }
 
-#design {
-  background-position: -5px -5px;
+.features_block:hover {
+  border: 3px solid #71005d;
+  background-color: white;
 }
 
-#responsive {
-  background-position: -5px -215px;
+.features_block:hover i {
+  color: white;
 }
 
-#easy {
-  background-position: -215px -5px;
+.features_block:hover .mid_circle {
+  background-color: #71005d;
 }
 
 /* FOOTER */
