@@ -5,9 +5,8 @@ body {
 
 header {
   width: 100vw;
-  height: 80px;
+  height: 100px;
   background-color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   position: fixed;
   z-index: 1;
   transition: 0.2s ease;
@@ -25,7 +24,7 @@ header .header_content {
   justify-content: space-between;
   width: 60vw;
   max-width: 1300px;
-  height: 80px;
+  height: 100px;
   padding: 0 16px 0 16px;
   transition: 0.2s ease;
 }
@@ -41,7 +40,7 @@ header .header_content.header {
 
 .logo_and_brandname h1 {
   color: #212121;
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 25px;
   font-weight: 800;
   margin-left: 32px;
@@ -64,6 +63,10 @@ nav .nav_links h1 {
   padding: 8px;
 }
 
+nav .nav_links:hover h1 {
+color: #999;
+}
+
 a, a:link, a:visited {
   text-decoration: none;
 }
@@ -72,14 +75,7 @@ a, a:link, a:visited {
   width: 50px;
   height: 50px;
   background-image: url("../img/spritesheet.png");
-  background-position: -425px -5px;
-  transition: 0.2s ease;
-}
-
-.logo_mini {
-  width: 40px;
-  height: 40px;
-  background-position: -485px -5px;
+  background-position: -625px -5px;
 }
 
 .content_frame {
@@ -103,14 +99,14 @@ a, a:link, a:visited {
 }
 
 .top_title {
-  color: white;
-  font-family: 'Cardo', serif;
-  font-size: 50px;
-  font-weight: normal;
+  color: #212121;
+  font-family: 'Raleway', sans-serif;
+  font-size: 70px;
   margin: 16px 8px 16px;
 }
 
 .top_content p {
+  padding: 8px;
   color: white;
   font-family: 'Cardo', serif;
   font-size: 20px;
@@ -124,10 +120,17 @@ a, a:link, a:visited {
 .top_button {
   padding: 4px 16px 4px 16px;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   border: 2px solid white;
   border-radius: 2px;
   margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_button i {
+  margin-left: 16px;
 }
 
 .top_button h1 {
@@ -164,8 +167,8 @@ a, a:link, a:visited {
 }
 
 .content_block h1 {
-  font-size: 18px;
-  margin: 32px 0 32px 0;
+  font-size: 20px;
+  margin: 64px 0 64px 0;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -219,23 +222,148 @@ a, a:link, a:visited {
   transition: 0.2s ease;
 }
 
-.features_block:hover {
-  border: 3px solid #71005d;
-  background-color: white;
+.features_blocks:hover .features_block {
+  border: 3px outset #71005d;
 }
 
-.features_block:hover i {
+.features_blocks:hover i {
   color: white;
 }
 
-.features_block:hover .mid_circle {
+.features_blocks:hover .mid_circle {
   background-color: #71005d;
 }
+
+/* WEBBERN */
+
+.webbern_title {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webbern_title h1 {
+  font-size: 20px;
+  margin: 32px 0 32px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.webbern_intro_text {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0 16px 0;
+}
+
+.webbern_intro_text p {
+  max-width: 60vw;
+  font-size: 20px;
+  font-family: 'Cardo', serif;
+}
+
+.history {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+}
+
+.history_content {
+  width: 50vw;
+  height: 500px;
+  display: flex;
+}
+
+.history_image {
+  background-image: url("../img/history.jpg");
+  background-size: cover;
+}
+
+.history_text {
+  background-color: #fff6ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.history_text h1 {
+  color: #212121;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.history_text hr {
+  width: 15vw;
+  background-color: #212121;
+  border: none;
+  height: 2px;
+}
+
+.history_text p {
+  color: #212121;
+  font-size: 20px;
+  font-family: 'Cardo', serif;
+  max-width: 500px;
+  text-align: center;
+}
+
+.collaborators {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 16px 0;
+}
+
+.collaborator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px;
+}
+
+.collaborator_image {
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/spritesheet.png");
+  border-radius: 50%;
+}
+
+.collaborator h1 {
+  color: #212121;
+  font-size: 25px;
+  font-family: 'Raleway', serif;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+.collaborator h2 {
+  color: #212121;
+  font-size: 20px;
+  font-family: 'Raleway', serif;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#jonaslindblad {
+  background-position: -315px -5px;
+}
+
+#sararickardsson {
+  background-position: -5px -315px;
+}
+
+#bjornolofsson {
+  background-position: -5px -5px;
+}
+
 
 /* FOOTER */
 
 footer {
   width: 100vw;
   height: 400px;
-  background-color: #71005d;
+  background-color: #212121;
 }
