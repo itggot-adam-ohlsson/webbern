@@ -8,3 +8,7 @@ $(window).scroll(function() {
 
 window.sr = ScrollReveal();
 sr.reveal('.features_block_img', { duration: 500 });
+
+$(".mobile_menu_icon").click(function () {
+  $(".mobile_links").toggleClass("mobile_links_open");
+});
