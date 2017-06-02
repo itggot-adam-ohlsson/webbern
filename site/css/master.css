@@ -40,7 +40,7 @@ header .header_content.header {
 
 .logo_and_brandname h1 {
   color: #212121;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   font-weight: 800;
   margin-left: 32px;
@@ -168,7 +168,7 @@ a, a:link, a:visited {
 
 .content_block h1 {
   font-size: 20px;
-  margin: 64px 0 64px 0;
+  margin: 32px 0 32px 0;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -232,6 +232,147 @@ a, a:link, a:visited {
 
 .features_blocks:hover .mid_circle {
   background-color: #71005d;
+}
+
+.projects {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects h1 {
+  font-size: 20px;
+  margin: 64px 0 64px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.projects_content {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 16px;
+}
+
+#octoparse {
+  background-image: url("../img/Octoparse.jpg");
+}
+
+#rocket {
+  background-image: url("../img/Rocket.png");
+}
+
+#bloggoss {
+  background-image: url("../img/BlogGoss.png");
+}
+
+.content_break {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.break {
+  width: 60vw;
+  height: 150px;
+  margin: 64px;
+  background-color: #212121;
+  padding: 0 16px 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.break p {
+  color: white;
+  font-size: 30px;
+  font-family: 'Cardo', serif;
+  margin-right: 32px;
+}
+
+.break_btn {
+  padding: 0 16px 0 16px;
+  text-transform: uppercase;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.2s ease;
+}
+
+.break_btn h1 {
+  color: #212121;
+  font-size: 20px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.break_btn:hover {
+  background-color: black;
+}
+
+.break_btn:hover h1 {
+  color: white;
+}
+
+/* PACKAGES */
+
+.offers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.offers_title {
+  font-size: 20px;
+  margin: 32px 0 32px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.offers_text p {
+  max-width: 60vw;
+  font-size: 20px;
+  font-family: 'Cardo', serif;
+}
+
+.offers_packages {
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer {
+  width: 300px;
+  height: 300px;
+  background-color: green;
+  margin: 8px;
+}
+
+.special_offers {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offers_brands_basic {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offers_brands_premium {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* WEBBERN */
@@ -359,11 +500,29 @@ a, a:link, a:visited {
   background-position: -5px -5px;
 }
 
-
 /* FOOTER */
 
 footer {
   width: 100vw;
   height: 400px;
   background-color: #212121;
+  margin-top: 32px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1600px) {
+  .projects_content {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 960px) {
+  .projects_content {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .project {
+    width: 100vw;
+    margin: 0;
+  }
 }
